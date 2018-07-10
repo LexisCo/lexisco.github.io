@@ -1,28 +1,25 @@
-.App {
-  text-align: center;
+.Lexis-fp {
+  text-align: Left;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.Lexis-fp-header {
+  background-color: #222333;
+  height: 160px;
+  padding-left: 20px;
+  padding-top: 1px;
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.Lexis-fp-title {
+  font-size: 3em;
 }
 
-.App-intro {
+.Lexis-fp-subtitle {
+  text-indent: 2em;
+  font-size: 1em;
+}
+
+.Lexis-fp-layer1 {
+  text-align: Center;
   font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
