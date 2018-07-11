@@ -1,13 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import ReeactDOM from 'react-dom';
+
+import { Button } from 'semantic-ui-react';
+
 import './App.css';
 
 class App extends Component {
   constructor () {
     super ();
-
+    this.state = { 
+      count: 0 
+    };
   }
 
+  excited = () => {
+    this.setState ({ count: this.state.count + 1});
+  }
 
   render() {
     return (
@@ -19,16 +27,22 @@ class App extends Component {
         </header>
 
         <p className="Lexis-fp-layer1">
-          Glen, lets put some content here.
+          Glen, lets put some content here. Some cool ideas, you know?
           <br></br><br></br>
-          Some cool ideas, you know?
         </p>
-
+        
+        <div className="Lexis-fp-layer2">
+            <tab></tab> Excited Level: { this.state.count }
+            <br></br><br></br>
+            <button primary class="button-excited" onClick={this.excited}> EXCITED! </button>
+        </div>
       </div>
     );
   }
 }
 
 export default App;
+
+
 
 
