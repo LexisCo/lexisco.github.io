@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import ReeactDOM from 'react-dom';
 
-import { Button } from 'semantic-ui-react';
-
 import './App.css';
+
+import AppHeader from './components/Header/Header';
 
 class App extends Component {
   constructor () {
@@ -19,7 +19,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="Lexis-fp">
+      <div >
+        <div className='AppHeader'>
+          <AppHeader />
+        </div>
 
         <header className="Lexis-fp-header">
           <h1 className="Lexis-fp-title">Lexis: </h1>
@@ -27,6 +30,7 @@ class App extends Component {
         </header>
 
         <p className="Lexis-fp-layer1">
+          <br></br><br></br>
           Glen, lets put some content here. Some cool ideas, you know?
           <br></br><br></br>
         </p>
@@ -42,7 +46,3 @@ class App extends Component {
 }
 
 export default App;
-
-
-
-
