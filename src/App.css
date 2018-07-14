@@ -1,9 +1,15 @@
 .fp-wrapper {
-  /*text-align: Center;*/
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-.fp-panel-main {
-  padding-bottom: 0.5em;
+.fp-sidebar {
+  width: 13%;
+}
+
+.fp-header {
+  width: 100%;
 }
 
 .Lexis-fp {

@@ -17,10 +17,12 @@ class App extends Component {
     return (
 
       <div className='fp-wrapper'>
+        <div className='fp-sidebar'>
           <AppSidebar />
-            <div className='fp-panel-main'>
-              <AppHeader />
-          </div>
+        </div>
+        <div className='fp-header'>
+          <AppHeader />
+        </div>
       </div>
     );
   }
