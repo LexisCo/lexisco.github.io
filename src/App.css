@@ -1,3 +1,11 @@
+.fp-wrapper {
+  /*text-align: Center;*/
+}
+
+.fp-panel-main {
+  padding-bottom: 0.5em;
+}
+
 .Lexis-fp {
 
 }
@@ -27,10 +35,6 @@
 
 .Lexis-fp-layer2 {
   text-align: Center;
-}
-
-.AppHeader {
-  padding-bottom: 0.5em;
 }
 
 .button-excited {

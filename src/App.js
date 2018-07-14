@@ -1,45 +1,26 @@
 import React, { Component } from 'react';
-import ReeactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
+import NotificationSystem from "react-notification-system";
 
 import './App.css';
 
+import AppSidebar from './components/Sidebar/Sidebar';
 import AppHeader from './components/Header/Header';
 
 class App extends Component {
-  constructor () {
-    super ();
-    this.state = { 
-      count: 0 
-    };
-  }
-
-  excited = () => {
-    this.setState ({ count: this.state.count + 1});
+  constructor (props) {
+    super(props);
   }
 
   render() {
+
     return (
-      <div >
-        <div className='AppHeader'>
-          <AppHeader />
-        </div>
 
-        <header className="Lexis-fp-header">
-          <h1 className="Lexis-fp-title">Lexis: </h1>
-          <p className="Lexis-fp-subtitle"> The Next Big Thing </p>
-        </header>
-
-        <p className="Lexis-fp-layer1">
-          <br></br><br></br>
-          Glen, lets put some content here. Some cool ideas, you know?
-          <br></br><br></br>
-        </p>
-        
-        <div className="Lexis-fp-layer2">
-            <tab></tab> Excited Level: { this.state.count }
-            <br></br><br></br>
-            <button primary class="button-excited" onClick={this.excited}> EXCITED! </button>
-        </div>
+      <div className='fp-wrapper'>
+          <AppSidebar />
+            <div className='fp-panel-main'>
+              <AppHeader />
+          </div>
       </div>
     );
   }
