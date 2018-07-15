@@ -1,11 +1,11 @@
 .fp-wrapper {
-  width: 100%;
   display: flex;
+  overflow: auto;
   flex-wrap: nowrap;
 }
 
 .fp-sidebar {
-  width: 13%;
+  min-width: 10.745em;
 }
 
 .fp-header {

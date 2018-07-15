@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Sidebar } from 'semantic-ui-react'
+import { Button, Menu, Sidebar } from 'semantic-ui-react'
 
 
 class AppHeader extends Component {
@@ -14,7 +14,6 @@ class AppHeader extends Component {
     	const { activeItem } = this.state
 
 	    return (
-	    	<Sidebar.Pusher>
 		    	<Menu size='large'>
 		    		<Menu.Item
 		    			header
@@ -38,8 +37,12 @@ class AppHeader extends Component {
 						active={activeItem === 'Menu 3'}
 						onClick={this.handleClick}
 			        />
+			        <Menu.Item position='right' >
+		              <Button as='a'>
+		                Log in
+		              </Button>
+			        </Menu.Item>
 		      	</Menu>
-		    </Sidebar.Pusher>
 	    )
 	}
 }
