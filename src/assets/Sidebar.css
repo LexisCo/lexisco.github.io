@@ -1,0 +1,17 @@
+.sb-title {
+	padding-top: 0.5em;
+	font-size: 250%;
+}
+
+.sb-logo {
+	color: green;
+}
+
+.nav-link {
+	color: white;
+
+}
+
+.nav-link :hover {
+	color: grey;
+}

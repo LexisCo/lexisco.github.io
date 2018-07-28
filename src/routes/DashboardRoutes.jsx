@@ -12,13 +12,13 @@ const dashboardRoutes = [
 
 	{
 		path: '/howitworks',
-		name: 'HowItWorks',
+		name: 'How it works',
 		component: How
 	},
 
 	{
 		path: '/about',
-		name: 'AboutUs',
+		name: 'About',
 		component: About
 	},
 

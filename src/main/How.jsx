@@ -7,7 +7,7 @@ class HowPage extends Component {
 		return(
 			<div className='hp-wrapper'>
 
-				<Container fluid>
+				<Container fluid textAlign='center'>
 					<Header as='h2'>How it works</Header>
 					<p> <Icon name='wrench' /> </p>
 					<p>

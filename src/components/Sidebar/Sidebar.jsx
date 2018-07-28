@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom';
-import { Icon, Menu, Sidebar } from 'semantic-ui-react'
+import { Divider, Header, Icon, Menu, Sidebar } from 'semantic-ui-react'
 
-// import dashboardRoutes from '../routes/DashboardRoutes.jsx'
-
+import '../../assets/Sidebar.css'
+import dashboardRoutes from '../../routes/DashboardRoutes.jsx'
 
 class AppSidebar extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
+	}
+
+	activeRoute (routeName) {
+		return this.props.location.pathname.indexOf(routeName) > -1 ? 'active' : ''; 
 	}
 
 	state = {}
@@ -28,12 +32,39 @@ class AppSidebar extends Component {
 					vertical
 					width='thin'
 				>
-				<Menu.Item as='a' href='https:/lexisco.github.io'>
-					<Icon name='home' />
-					Lexis
-				</Menu.Item>
+
+				<div className='sb-title'>
+					<Icon className='sb-logo' name='pied piper alternate' />
+				</div>
+
+				<Divider />
 
 				<div className='sb-wrapper'>
+					<ul className='sb-nav'>
+						{dashboardRoutes.map((prop,key) => {
+							if (!prop.redirect)
+								return (
+									<div
+										className={
+											prop.upgrade
+												? 'active active-pro'
+												: this.activeRoute(prop.path)
+										}
+										key={key}
+									>
+										<NavLink
+											to={prop.path}
+											className='nav-link'
+											activeClassName='active'
+										>
+											<p>{prop.name}</p>
+										</NavLink>
+										<Divider />
+									</div>
+								);
+							return null;
+						})}
+					</ul>
 				</div>
 
 				</Sidebar>

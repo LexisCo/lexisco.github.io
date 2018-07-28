@@ -6,7 +6,7 @@ class AboutPage extends Component {
 	render() {
 		return(
 			<div className='ab-wrapper'>
-				<Container fluid>
+				<Container fluid textAlign='center'> 
 					<Header as='h2'>About Us</Header>
 					<p> <Icon name='user' /> </p>
 					<p>
