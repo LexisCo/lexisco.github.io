@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
-import { Button, Icon, Menu } from 'semantic-ui-react'
+import { Button, Dropdown, Icon, Menu } from 'semantic-ui-react'
 
+const options = [
+  { key: 1, text: 'Item 1', value: 1 },
+  { key: 2, text: 'Item 2', value: 2 },
+  { key: 3, text: 'Item 3', value: 3 },
+]
 
 class AppHeader extends Component {
 	constructor() {
@@ -32,10 +37,11 @@ class AppHeader extends Component {
 						onClick={this.handleClick}
 			        />
 			        <Menu.Item position='right' >
-		              <Button as='a'>
-		                <Icon name='setting' />
-		                Settings
-		              </Button>
+		              <Dropdown 
+		              	button
+						trigger={<span><Icon name='setting'/> Settings </span>}
+						options={options}
+		              />
 			        </Menu.Item>
 		      	</Menu>
 	    )

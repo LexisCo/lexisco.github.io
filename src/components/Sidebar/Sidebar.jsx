@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom';
 import { Icon, Menu, Sidebar } from 'semantic-ui-react'
+
+// import dashboardRoutes from '../routes/DashboardRoutes.jsx'
 
 
 class AppSidebar extends Component {
@@ -25,18 +28,15 @@ class AppSidebar extends Component {
 					vertical
 					width='thin'
 				>
-				<Menu.Item as='a'>
+				<Menu.Item as='a' href='https:/lexisco.github.io'>
 					<Icon name='home' />
 					Lexis
 				</Menu.Item>
-				<Menu.Item as='a'>
-					How it Works
-				</Menu.Item>
-				<Menu.Item as='a'>
-					About Us
-				</Menu.Item>
-				</Sidebar>
 
+				<div className='sb-wrapper'>
+				</div>
+
+				</Sidebar>
 			</Sidebar.Pusher>
 		)
 	}
