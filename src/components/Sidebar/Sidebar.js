@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Divider, Header, Icon, Image, Menu, Segment, Sidebar, Visibility } from 'semantic-ui-react'
+import { Icon, Menu, Sidebar } from 'semantic-ui-react'
 
 
 class AppSidebar extends Component {
@@ -26,14 +26,14 @@ class AppSidebar extends Component {
 					width='thin'
 				>
 				<Menu.Item as='a'>
-				  <Icon name='home' />
-				  Lexis
+					<Icon name='home' />
+					Lexis
 				</Menu.Item>
 				<Menu.Item as='a'>
-					Page 1
+					How it Works
 				</Menu.Item>
 				<Menu.Item as='a'>
-					Page 2
+					About Us
 				</Menu.Item>
 				</Sidebar>
 

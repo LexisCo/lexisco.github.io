@@ -1,4 +1,7 @@
 .fp-wrapper {
+  position: relative;
+  top: 0;
+  height: 100vh;
   display: flex;
   overflow: auto;
   flex-wrap: nowrap;
@@ -8,49 +11,13 @@
   min-width: 10.745em;
 }
 
-.fp-header {
+.fp-main-panel {
   width: 100%;
 }
 
-.Lexis-fp {
-
-}
-
-.Lexis-fp-header {
-  background-color: #1a75ff;
-  text-align: Left;
-  height: 8em;
-  padding-left: 5em;
-  color: white;
-  box-shadow: 0em 0em 5em #999999;
-}
-
-.Lexis-fp-title {
-  font-size: 3em;
-}
-
-.Lexis-fp-subtitle {
-  text-indent: 2em;
-  font-size: 1em;
-}
-
-.Lexis-fp-layer1 {
-  text-align: Center;
-  font-size: large;
-}
-
-.Lexis-fp-layer2 {
-  text-align: Center;
-}
-
-.button-excited {
-    background: linear-gradient(45deg, #ff0066 30%, #33ff33 90%);
-    border-radius: 3;
-    height: 3em;
-    width: 7em;
-    border: 0;
-    border-radius: 1em;
-    color: white;
-    height: 48;
-    box-shadow: 0 0 5em 0 rgba(255, 105, 135, .3);
+.fp-footer {
+  line-height: 5em;
+  padding-top: 1em;
+  overflow: hidden;
+  flex-wrap: nowrap;
 }

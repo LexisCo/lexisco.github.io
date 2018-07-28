@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
-import { Button, Menu, Sidebar } from 'semantic-ui-react'
+import { Button, Icon, Menu } from 'semantic-ui-react'
 
 
 class AppHeader extends Component {
 	constructor() {
 		super();
 	}
+	
 	state = {}
 
  	handleClick = (e, { title }) => this.setState({ activeItem: title })
@@ -18,15 +19,8 @@ class AppHeader extends Component {
 		    		<Menu.Item
 		    			header
 		    			icon
-		    			content='Application'
+		    			content='Application Title'
 		    		/>
-			        <Menu.Item 
-			        	content='Home'
-			        	link='#'
-			        	href='#'
-				        active={activeItem === 'Menu 1'}
-				        onClick={this.handleClick}
-			        />
 			        <Menu.Item 
 				        content='App 1'
 						active={activeItem === 'Menu 2'}
@@ -39,7 +33,8 @@ class AppHeader extends Component {
 			        />
 			        <Menu.Item position='right' >
 		              <Button as='a'>
-		                Log in
+		                <Icon name='setting' />
+		                Settings
 		              </Button>
 			        </Menu.Item>
 		      	</Menu>

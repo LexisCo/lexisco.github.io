@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import NotificationSystem from "react-notification-system";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 import './App.css';
 
 import AppSidebar from './components/Sidebar/Sidebar';
 import AppHeader from './components/Header/Header';
+import Dashboard from './main/Dashboard';
+import AppFooter from './components/Footer/Footer';
 
 class App extends Component {
   constructor (props) {
@@ -17,11 +18,19 @@ class App extends Component {
     return (
 
       <div className='fp-wrapper'>
+
         <div className='fp-sidebar'>
           <AppSidebar />
         </div>
-        <div className='fp-header'>
+
+        <div className='fp-main-panel'>
           <AppHeader />
+
+          <Dashboard />
+
+          <div className='fp-footer'>
+            <AppFooter />
+          </div>
         </div>
       </div>
     );
