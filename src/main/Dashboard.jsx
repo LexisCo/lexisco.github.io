@@ -41,7 +41,7 @@ class Dashboard extends Component {
 				<Card.Content textAlign='center'>
 					<Card.Header>Lexis Super Search</Card.Header>
 						<Card.Meta>
-							<span className='Description'> Glen will know the way </span>
+							<span className='Description'> Super Duper Search </span>
 						</Card.Meta>
 
 						<Dimmer.Dimmable
@@ -51,7 +51,7 @@ class Dashboard extends Component {
 							onMouseEnter={this.handleShow}
 							onMouseLeave={this.handleHide}
 							size='medium'
-							src='https://scontent.fybz1-1.fna.fbcdn.net/v/t1.0-1/c27.0.160.160/p160x160/10593192_10203833912742456_4717625189318138041_n.jpg?_nc_cat=0&oh=c7c938331c819ea24477dc7c6ccb361a&oe=5BDC7801' 
+							src='https://avatars2.githubusercontent.com/u/25327116?s=460&v=4'
 						/>
 
 					</Card.Content>

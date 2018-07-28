@@ -27,12 +27,12 @@ class AppHeader extends Component {
 		    			content='Application Title'
 		    		/>
 			        <Menu.Item 
-				        content='App 1'
+				        content='Link 1'
 						active={activeItem === 'Menu 2'}
 						onClick={this.handleClick}
 			        />
 			        <Menu.Item 
-				        content='App 2'
+				        content='Link 2'
 						active={activeItem === 'Menu 3'}
 						onClick={this.handleClick}
 			        />
