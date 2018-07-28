@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom';
-import { Divider, Header, Icon, Menu, Sidebar } from 'semantic-ui-react'
+import { Divider, Icon, Menu, Sidebar } from 'semantic-ui-react'
 
 import '../../assets/Sidebar.css'
 import dashboardRoutes from '../../routes/DashboardRoutes.jsx'
@@ -19,7 +19,8 @@ class AppSidebar extends Component {
  	handleClick = (e, { title }) => this.setState({ activeItem: title })
 
 	render() {
-    	const { activeItem } = this.state
+    	// const { activeItem } = this.state
+    	
 		return (
 			<Sidebar.Pusher>	
 				<Sidebar

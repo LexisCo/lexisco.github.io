@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { Container, Grid } from 'semantic-ui-react'
 
-import dashboardRoutes from '../../routes/DashboardRoutes.jsx'
-
 class Footer extends Component {
 
 	render () {
