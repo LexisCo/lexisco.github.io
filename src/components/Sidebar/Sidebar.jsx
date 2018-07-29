@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom';
-import { Divider, Icon, Menu, Sidebar } from 'semantic-ui-react'
+import { Divider, Icon, Menu, Segment, Sidebar } from 'semantic-ui-react'
 
-import '../../assets/Sidebar.css'
+import '../../assets/css/App.css'
 import dashboardRoutes from '../../routes/DashboardRoutes.jsx'
 
 class AppSidebar extends Component {
@@ -34,18 +34,16 @@ class AppSidebar extends Component {
 					width='thin'
 				>
 
-				<div className='sb-title'>
+				<Menu.Item className='sb-title'>
 					<Icon className='sb-logo' name='pied piper alternate' />
-				</div>
-
-				<Divider />
+				</Menu.Item>
 
 				<div className='sb-wrapper'>
-					<ul className='sb-nav'>
+					<div className='sb-nav'>
 						{dashboardRoutes.map((prop,key) => {
 							if (!prop.redirect)
 								return (
-									<div
+									<Menu.Item
 										className={
 											prop.upgrade
 												? 'active active-pro'
@@ -60,12 +58,11 @@ class AppSidebar extends Component {
 										>
 											<p>{prop.name}</p>
 										</NavLink>
-										<Divider />
-									</div>
-								);
+									</Menu.Item>
+									);
 							return null;
 						})}
-					</ul>
+					</div>
 				</div>
 
 				</Sidebar>
