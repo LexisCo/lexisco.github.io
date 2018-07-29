@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 
 import './assets/css/App.css';
 
@@ -27,7 +27,9 @@ class App extends Component {
         </div>
 
         <div className='fp-main-panel'>
-          <AppHeader {...this.props} />
+          <div className='fp-header'>
+            <AppHeader {...this.props} />
+          </div>
 
           <Switch>
           {dashboardRoutes.map((prop, key) => {

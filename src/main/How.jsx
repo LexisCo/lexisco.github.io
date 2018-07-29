@@ -6,8 +6,7 @@ class HowPage extends Component {
 	render() {
 		return(
 			<div className='hp-wrapper'>
-
-				<Container fluid textAlign='center'>
+				<Container fluid textAlign='center' style={{ marginTop: '2em' }}>
 					<Header as='h2'>How it works</Header>
 					<p> <Icon name='wrench' /> </p>
 					<p>

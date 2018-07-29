@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom';
 import { Divider, Icon, Menu, Segment, Sidebar } from 'semantic-ui-react'
 
-import '../../assets/css/App.css'
 import dashboardRoutes from '../../routes/DashboardRoutes.jsx'
 
 class AppSidebar extends Component {

@@ -36,25 +36,36 @@ class Dashboard extends Component {
 		  </div>
 		)
 
+
 		return (
 			<Card fluid>
 				<Card.Content textAlign='center'>
+
 					<Card.Header>Lexis Super Search</Card.Header>
 						<Card.Meta>
-							<span className='Description'> Super Duper Search </span>
+							<span className='Description'> Drag and drop an image below </span>
 						</Card.Meta>
 
-						<Dimmer.Dimmable
-							as={Image}
-							dimmed={active}
-							dimmer={{ active, content }}
-							onMouseEnter={this.handleShow}
-							onMouseLeave={this.handleHide}
-							size='medium'
-							src='https://avatars2.githubusercontent.com/u/25327116?s=460&v=4'
-						/>
+						<Card fluid>
+							<Card.Header>Supported formats:</Card.Header>
+							<Card.Meta>
+								<span className='Description'> .this .ain't. .workin' .yet </span>
+							</Card.Meta>
+							<Card.Content>
+								<Dimmer.Dimmable
+									as={Image}
+									dimmed={active}
+									dimmer={{ active, content }}
+									onMouseEnter={this.handleShow}
+									onMouseLeave={this.handleHide}
+									size='medium'
+									src='https://react.semantic-ui.com/images/wireframe/image.png'
+								/>
+							</Card.Content>
+						</Card>
 
 					</Card.Content>
+
 				<Card.Content extra textAlign='center'>
 					<Button onClick={this.excited} > <Icon name='thumbs up outline'/> Like  </Button> 
 					<Label> {this.state.count} </Label>
