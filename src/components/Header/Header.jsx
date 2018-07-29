@@ -60,24 +60,30 @@ class AppHeader extends Component {
 		    			icon
 		    			content={this.getName()}
 		    		/>
-			        <Menu.Item 
-				        icon='search'
-						active={activeItem === 'Menu 2'}
-						onClick={this.handleClick}
-			        />
-			        <Menu.Item 
-				        icon='question circle outline'
-						active={activeItem === 'Menu 3'}
-						onClick={this.handleClick}
-			        />
-			        <Menu.Item position='right' >
-		              <Dropdown 
-						floating
-						options={options}
-						trigger={setting}
-						// onClick={this.handleClick}
-		              />
-			        </Menu.Item>
+
+		    		<Menu.Menu position='right' >
+
+				        <Menu.Item 
+					        icon='search'
+							active={activeItem === 'Menu 2'}
+							onClick={this.handleClick}
+				        />
+
+				        <Menu.Item>
+			              <Dropdown 
+							options={options}
+							trigger={setting}
+							// onClick={this.handleClick}
+			              />
+				        </Menu.Item>
+
+				        <Menu.Item 
+					        icon='question circle outline'
+							active={activeItem === 'Menu 3'}
+							onClick={this.handleClick}
+				        />
+
+			        </Menu.Menu>
 
 					<Portal // Todo: Open Portal openOnTriggerClick>
 					>
