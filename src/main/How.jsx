@@ -15,6 +15,10 @@ class HowPage extends Component {
 					<p>
 						Will fill this up with technical jargon later.
 					</p>
+					<p>
+						<a href="https://github.com/LexisCo/lexisco.github.io">
+						View Github </a> 
+					</p>
 				</Container>
 			</div>
 
