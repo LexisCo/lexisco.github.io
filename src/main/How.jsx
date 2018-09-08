@@ -14,12 +14,22 @@ class HowPage extends Component {
   };
 
   callApi = async () => {
-    const response = await fetch('/api/start');
+    const response = await fetch('http://lexisai-200803.appspot.com/api/start');
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
     return body;
   };
 // -- Backend Call Testing -- //
+
+  //   "proxy": {
+  //   "/proxy": {
+  //     "target": "https://lexisai-200803.appspot.com",
+  //     "pathRewrite": {
+  //       "^/proxy" : ""
+  //     },
+  //     "changeOrigin": true
+  //   }
+  // }
 
 	render() {
 		return(
