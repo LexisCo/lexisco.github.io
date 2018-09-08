@@ -23,6 +23,13 @@
   "devDependencies": {
     "semantic-ui": "^2.3.3"
   },
-
-  "proxy": "http://lexisai-200803.appspot.com"
+  "proxy": {
+    "/proxy": {
+        "target": "https://lexisai-200803.appspot.com",
+        "pathRewrite": {
+                "^/proxy" : ""
+        },
+        "changeOrigin": true
+      }
+  },
 }
