@@ -14,7 +14,7 @@ class HowPage extends Component {
   };
 
   callApi = async () => {
-    const response = await fetch('http://lexisai-200803.appspot.com/api/start');
+    const response = await fetch('https://lexisai-200803.appspot.com/api/start');
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
     return body;
